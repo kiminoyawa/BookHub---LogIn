@@ -1,8 +1,8 @@
 /* Colors:
-#2e8b56 - Background
+#a52a2a - Background
 #ffffff - Secondary
 #333333 - Text
-#2e8b56 - Button
+#
 */
 
 * {
@@ -10,7 +10,7 @@
 }
 
 body {
-  background: radial-gradient(#a52a2a,#333333);
+  background: radial-gradient(#a52a2a, #333333);
 }
 
 .panel-primary {
@@ -21,11 +21,23 @@ body {
   border-bottom-left-radius: 0px;
   border-top-right-radius: 0px;
   box-shadow: 0 4px 12px rgba(165, 42, 42, 1);
-  
+
+}
+
+.system-logo {
+  background: #a52a2a;
+  border-radius: 50px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 .system-logo img {
   width: 30%;
+}
+
+.system-logo p {
+  color: #F5DEB3;
+  font-size: 0.7rem;
 }
 
 .panel-title {
@@ -90,18 +102,31 @@ a:hover {
 
 @media (max-width: 480px) {
   body {
-    margin: 0;
-    padding: 0;
+      margin: 0;
+      padding: 0;
+      background: white;
+  }
+
+  .system-logo {
     background: none;
   }
+
+  .system-logo img {
+    width: 50%;
+  }
+
+  .system-logo p {
+    color: #a52a2a;
+  }
+
   .panel-primary {
-    border-radius: 0px;
-    box-shadow: none;
-    border: none;
-    height: auto;
-    min-height: 100svh;
-    align-content: center;
-  } 
+      border-radius: 0px;
+      box-shadow: none;
+      border: none;
+      height: auto;
+      min-height: 100svh;
+      align-content: center;
+  }
 }
 
 /* removed selectors
