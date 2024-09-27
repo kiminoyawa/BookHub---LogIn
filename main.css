@@ -92,10 +92,12 @@ a:hover {
   body {
     margin: 0;
     padding: 0;
+    background: none;
   }
   .panel-primary {
     border-radius: 0px;
     box-shadow: none;
+    border: none;
     height: auto;
     min-height: 100svh;
     align-content: center;
